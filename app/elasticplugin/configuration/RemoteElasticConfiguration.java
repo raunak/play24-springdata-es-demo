@@ -18,7 +18,7 @@ import java.net.InetAddress;
  * Configuration which is used to connect via rest to the database.
  */
 @Configuration
-@EnableElasticsearchRepositories(basePackages = "elastic.repositories", repositoryFactoryBeanClass = ElasticsearchRepositoryBean.class)
+@EnableElasticsearchRepositories(basePackages = "elastic.repositories")
 public class RemoteElasticConfiguration extends ElasticBaseConfiguration {
 
     private static TransportClient client;
